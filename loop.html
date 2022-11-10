@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loop statement</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // for (var count=1;count<=10; count++)
+    // document.write(count +" <br>")
+    for (var count=10;count>=1; count--)
+    document.write(count +" <br>") //reverse counting
+
+    //While loop Statement
+    var i=0;
+    while(i<10){
+        document.write(i +" " +'JavaScript'+ "<br/>")
+        i++;
+    }
+    //ForEach loop statement
+    var cars =["car1","car2","car3","car4","car5"];
+    cars.forEach(car);
+    function car(item,index,){
+        document.write(index + "-" + item + "<br>")
+    }
+
+</script>
+</html>
