@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="user-name">
+    <button onclick="getName()">Submit</button>
+    <h1></h1>
+    <button onclick="test()">try it</button>
+    <h1 id="countdown"></h1>
+    <button onclick="stop()">Stop</button>
+</body>
+<script>
+    function getName(){
+        var uName = document.getElementsByName('user-name')[0].value;
+        document.getElementsByName('user-name')[0].value = " "; //value null karnyasathi. 
+        document.getElementsByTagName("h1")[0].innerHTML = uName;
+
+    }
+    // setInterval Method
+    
+    // function test(){
+    //     setInterval(
+    //         function(){
+    //             alert("Hello")
+    //         },
+    //         2500
+    //     )
+    // }
+
+    // setTimeout Method ( for dealay any message )
+    function test(){
+          setTimeout(
+            function(){
+                alert("hello there !");
+            },
+            2000
+          )
+    }
+
+    //clearInterval() Method
+    var test =setInterval(count,1000);
+    var c =0;
+    function count(){
+        document.getElementById('countdown').innerText = c;
+        c++;
+    }
+    function stop(){
+        clearInterval(test);
+    }
+
+
+</script>
+</html>
