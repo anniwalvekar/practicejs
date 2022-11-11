@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="result"></h1>
+    <button onclick="getDate()">Date</button>
+    <button onclick="month()">Month</button>
+    <button onclick="year()">Year</button>
+</body>
+<script>
+    var date = new Date();
+    function getDate(){
+        document.getElementById('result').innerText = date;
+    }
+    function month(){
+        var month =["Jan","Feb","March","April","May","June","July","August","September","October","November","December"];
+        document.getElementById('result').innerText = month[date.getMonth()]
+
+    }
+    function year(){
+        document.getElementById('result').innerText=date.getFullYear()
+    }
+</script>
+</html>

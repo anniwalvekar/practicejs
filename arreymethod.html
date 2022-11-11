@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <h1 id="new"></h1>  
+  <button onclick="pop()">pop</button>
+  <button onclick="push()">Push</button>
+  <button onclick="slice()">Slice</button>
+  <button onclick="reverse()">Reverse</button>
+  <button onclick="shift()">Shift</button>
+</body>
+<script>
+    var fruits =["Mango","Apple","Banana","Orange"];
+    var vegitables= ["Potato","Onion","Peas","Tomato"];
+    var shop = fruits.concat(vegitables);
+    //var result = Array.isArray(fruits);
+   // var result = fruits.valueOf();
+    //var result = fruits.join(" | ");
+    // var index = shop.indexOf("Banana");
+    // document.write(index);
+var demo = fruits
+document.getElementById('new').innerText =demo;
+function pop(){
+    demo.pop();
+    document.getElementById('new').innerText =demo;
+}
+function push(){
+    demo.push("Chicoo")
+    document.getElementById('new').innerText =demo;
+}
+function slice(){
+    var x=demo.slice(2);
+    document.getElementById('new').innerText =x;
+}
+function reverse(){
+    demo.reverse();
+    document.getElementById('new').innerText =demo;
+}
+function shift(){
+    var x=demo.shift();
+    document.getElementById('new').innerText =x;
+}
+</script>
+</html>
