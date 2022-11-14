@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    Please enter your number <br>
+    <input type="text" onkeyup="val(this)">
+    <div id="res"></div>
+
+</body>
+<script>
+    document.getElementById('res').style.color ="red";
+    function val(elem){  //elem= element and isNaN =is not a number
+      if (isNaN (elem.value)){
+        document.getElementById('res').innerText = "Please Enter Numbers Only"  ;
+    }else{
+        document.getElementById('res').innerText ="";
+        if(elem.value.length > 10){
+            document.getElementById('res').innerText = "Please enter valid number";
+        }
+      }
+        
+    }
+</script>
+</html>

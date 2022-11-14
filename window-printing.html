@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Printing Page</title>
+</head>
+<body id="body">
+
+        <center>
+            <div>
+                <img src=https://unsplash.com/photos/-T-9-x7ypCI width="100px">
+            </div>
+            <p id="data">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero natus, rem commodi modi similique eaque sequi delectus voluptas asperiores earum consequuntur. Molestias dicta obcaecati error atque eligendi inventore ipsam voluptatibus velit debitis suscipit adipisci odio impedit fugiat accusamus voluptas in soluta libero voluptatum, minus ratione illum ea! Harum corporis necessitatibus, perferendis a corrupti nobis omnis cumque tempore reiciendis quidem inventore illum rem error. Quam possimus assumenda quas ratione praesentium quo velit odio fugit adipisci ex numquam, nihil, magnam minima voluptates, dolores corporis. Possimus aut vel, sit quaerat molestias et repellendus ducimus molestiae minima necessitatibus, veniam maxime consectetur iusto a voluptatem autem. Recusandae hic qui, iure a        </p>
+                <button onclick="printPage()">print</button>
+            <p id=""> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero natus, rem commodi modi similique eaque sequi delectus voluptas asperiores earum consequuntur. Molestias dicta obcaecati error atque eligendi inventore ipsam voluptatibus velit debitis suscipit adipisci odio impedit fugiat accusamus voluptas in soluta libero voluptatum, minus ratione illum ea! Harum corporis necessitatibus, perferendis a corrupti nobis omnis cumque tempore reiciendis quidem inventore illum rem error. Quam possimus assumenda quas ratione praesentium quo velit odio fugit adipisci ex numquam, nihil, magnam minima voluptates, dolores corporis. Possimus aut vel, sit quaerat molestias et repellendus ducimus molestiae minima necessitatibus, veniam maxime consectetur iusto a voluptatem autem. Recusandae hic qui, iure a        </p>
+        </center>
+</body>
+<script>
+    function printPage(){
+// window.print()
+var body = document.getElementById('body').innerHTML;
+var data = document.getElementById('data').innerHTML;
+ document.getElementById('body').innerHTML = data;
+ window.print()
+ document.getElementById('body').innerHTML = body;
+
+
+    }
+</script>
+</html>
