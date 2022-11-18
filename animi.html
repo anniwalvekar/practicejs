@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        .yellow{
+            position: relative;
+            width: 400px;
+            height: 400px;
+            background: yellow;
+            margin-top: 10px;
+        }
+        #red{
+            width: 50px;
+            height: 50px;
+            background: red;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+
+        }
+    </style>
+</head>
+<body>
+    <button onclick="move()">Click me</button>
+    <div class="yellow">
+        <div id="red">
+        </div>
+    </div>
+</body>
+<script>
+    function move(){
+        var redElem =document.getElementById('red');
+        var position =0;
+        var animi = setInterval(animate,5)
+        function animate(){
+            if (position== 350){
+                clearInterval(animi);
+            }else{
+
+                position++
+                redElem.style.top = position + "px";
+                redElem.style.left = position + "px";
+            }
+        }  
+    }
+</script>
+</html>
