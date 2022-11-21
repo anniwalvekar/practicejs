@@ -1,0 +1,18 @@
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+margin-right: 42px;
+}
+.login{
+    margin: 20px;
+}
+.name{
+    margin-right: 20px;
+}
+.pass{
+    margin-right: 30px;
+}
